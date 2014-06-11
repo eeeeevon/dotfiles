@@ -1,0 +1,39 @@
+[user]
+  name = Yvonne Doll
+  email = yvonne@giveforward.com
+[github]
+  user = eeeeevon
+[core]
+  autocrlf = input
+  safecrlf = true
+  editor = vim
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  pr = pull --rebase
+  rid = rebase -i develop
+  amend = commit --amend
+  initialize = !git init && git commit --allow-empty -m 'initial commit'
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f 
